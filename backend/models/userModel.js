@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema(
       default: false,
     },
   },
-  { timestaps: true }
+  { timestamps: true } // typo error fixed
 );
 
 userSchema.methods.matchPassword = async function (enteredPassword) {
